@@ -1,0 +1,78 @@
+header {
+    @include outer-container;
+    width: 85%;
+    overflow: hidden;
+  }
+
+.wrapper {
+  background: url(/images/big_wave.jpg);
+  background-size: cover;
+  background-position-y: 40%;
+  width: 100%;
+  height: 490px;
+}
+
+
+.mainNav {
+  @include outer-container;
+  list-style-type: none;
+  text-transform: uppercase;
+  position: relative;
+  float: right;
+  top: 10px;
+  word-spacing: 12px;
+  font-size: 18px;
+  font-family: 'Oswald';
+}
+
+.blogNav {
+  top: 5px;
+  left: 38px;
+  float: left;
+  margin: 16px 0px 0px 8px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.icon {
+  margin-top: 8px;
+  width: 35px;
+  float: left;
+  .fa-globe {
+    font-size: 35px;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  a:visited {
+    color: #666;
+  &:hover {
+    text-decoration: none;
+    }
+  }
+}
+
+.hero {
+  @include outer-container;
+  max-width: 960px;
+  height: auto;
+  margin: 170px auto 0 auto;
+  text-align: center;
+  font-family: 'Muli';
+  h1 {
+    font-size: $h1-headline;
+    color: white;
+    font-weight: 400;
+    line-height: 75px;
+    text-shadow: 0px 2px 2px black;
+    margin-bottom: 5px;
+  }
+  .sub {
+    font-size: $h5-headline;
+    color: black;
+    font-weight: 400;
+    margin-top: 0px;
+  }
+}

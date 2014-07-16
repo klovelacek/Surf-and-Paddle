@@ -1,0 +1,126 @@
+.mainWrapper {
+  width: 80%;
+  margin: 14% auto 30px auto;
+  @include outer-container;
+}
+
+article {
+  width: 50%;
+  float: left;
+}
+// Article Headline
+h2 {
+  font-size: $h2-headline;
+  font-family: 'Oswald';
+  color: black;
+  font-weight: 300;
+  line-height: 55px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: $paragraph;
+  line-height: 26px;
+  .inlineAnchor {
+    color: $primary-blue;
+    p:hover {
+      color: orange;
+    }
+  }
+}
+// Article Author cutline and article date
+.cutLine {
+  list-style-type: none;
+  display: inline;
+  margin-top: 15px;
+  padding-left: 0;
+  font-size: 13px;
+  img {
+    width: 43px;
+    border-radius: 50%;
+  }
+}
+
+img {
+  vertical-align: text-center;
+}
+
+.cutlineSpan
+  ul li {
+  display: inline;
+  }
+
+#author {
+  color: $primary-blue;
+  padding-left: 10px;
+}
+
+#date {
+  color: $secondary-blue;
+}
+
+.inLine {
+  color: $primary-blue;
+}
+
+//Pull Quote here
+
+blockquote {
+  font-size: $h3-headline;
+  font-family: 'Muli';
+  line-height: 35px;
+  text-transform: uppercase;
+  color: $primary-blue;
+  border-left: solid 5px $secondary-blue;
+  padding-left: 30px;
+  margin-left: 0;
+}
+
+// Page Redirect Bottom of Main article
+
+.colophon ul li {
+  list-style-type: none;
+  display: inline;
+  text-decoration: none;
+  height: 50px;
+}
+
+.colophon ul li i {
+  color: white;
+  background: black;
+  font-size: 13px;
+  padding: 6px 7px 6px 7px;
+}
+
+.colophon ul {
+  padding-left: 0;
+}
+
+.descript1 {
+  color: white;
+  background: $secondary-blue;
+  font-size: $redirect;
+  padding: $redir-padding;
+  position: relative;
+  right: 5px;
+}
+
+.descript2 {
+  color: white;
+  background: $secondary-blue;
+  font-size: $redirect;
+  position: relative;
+  right: 5px;
+  padding: 6px 19px 6px 19px;
+}
+
+.descript3 {
+  color: white;
+  background: $primary-blue;
+  font-size: $redirect;
+  position: relative;
+  right: 5px;
+  padding: $redir-padding;
+}

@@ -1,0 +1,31 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Fonts sizes
+
+$h1-headline: 5.85em;
+$h2-headline: 3em;
+$h3-headline: 2em;
+$h5-headline: 1em;
+$paragraph: 16px;
+$anchor: 1em;
+$redirect: 12px;
+$redir-padding: 6px 10px 6px 10px;
+
+// Colors */
+
+$primary-blue: #2267AB;
+$secondary-blue: #91B5C9;
+
+
+a {
+  color: $primary-blue;
+
+  &:hover {
+    color: lighten($primary-blue, 10%);
+  }
+}
+
+@import "header";
+@import "mainContent";

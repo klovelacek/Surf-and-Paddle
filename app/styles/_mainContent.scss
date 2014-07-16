@@ -1,20 +1,19 @@
 .mainWrapper {
-  width: 80%;
-  margin: 14% auto 30px auto;
+  width: 85%;
+  margin: 16% auto 30px auto;
   @include outer-container;
 }
 
 article {
-  width: 50%;
-  float: left;
+  @include span-columns(8);
 }
-// Article Headline
+// Big Article Headline
 h2 {
   font-size: $h2-headline;
   font-family: 'Oswald';
   color: black;
   font-weight: 300;
-  line-height: 55px;
+  line-height: 67px;
   margin-bottom: 5px;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -68,7 +67,7 @@ img {
 //Pull Quote here
 
 blockquote {
-  font-size: $h3-headline;
+  font-size: 1.9em;
   font-family: 'Muli';
   line-height: 35px;
   text-transform: uppercase;

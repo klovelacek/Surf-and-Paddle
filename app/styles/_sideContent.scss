@@ -1,43 +1,43 @@
-.aside {
+aside {
 @include span-columns(4);
 text-align: center;
 }
 
 #dolphin {
   border-radius: 50%;
-  width: 70px;
-  margin-left: 130px;
+  width: 80px;
   margin-top: 60px;
+  text-align: center;
 }
 
 .annieType {
   font-family: sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   color: $primary-blue;
   text-align: center;
   font-size: 19px;
-  margin-bottom: 6px;
+  margin: 11px 0px 6px 0px;
 }
 
-.socialLinks {
+.socialLinks a {
   font-family: 'Muli' 200;
   text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 14px;
   color: $secondary-blue;
-  text-align: center;
-  font-size: 13px;
+  display: inline;
+  list-style-type: none;
+  padding-right: 10px;
 }
 
-.socialLinks ul li {
-  list-style-type: none;
-  display: inline;
-  padding-left: 11px;
-  margin-top: 5px;
+.seaside img  {
+  width: 75%;
+  margin-top: 40px;
 }
-/* .seaside {
-  width: 80%;
-  height: 200px;
-  background-color: blue;
-  margin-left: auto;
-  margin-right: auto;
-} */
+
+.addLink {
+  color: $secondary-blue;
+  font-size: 12px;
+  margin-left: 30px;
+}

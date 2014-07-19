@@ -5,7 +5,8 @@
 }
 
 article {
-  @include span-columns(8);
+  @include span-columns(7);
+  margin-right: 8%;
 }
 // Big Article Headline
 h2 {
@@ -14,7 +15,6 @@ h2 {
   color: black;
   font-weight: 300;
   line-height: 67px;
-  margin-bottom: 5px;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -22,11 +22,12 @@ h2 {
 p {
   font-size: $paragraph;
   line-height: 26px;
-  .inlineAnchor {
-    color: $primary-blue;
-    p:hover {
-      color: orange;
-    }
+}
+
+.inlineAnchor {
+  color: $primary-blue;
+    &:hover {
+    color: orange;
   }
 }
 // Article Author cutline and article date
@@ -96,7 +97,7 @@ blockquote {
   padding-left: 0;
 }
 
-.descript1 {
+.descript1 .descript3 {
   color: white;
   background: $secondary-blue;
   font-size: $redirect;
@@ -110,15 +111,5 @@ blockquote {
   background: $secondary-blue;
   font-size: $redirect;
   position: relative;
-  right: 5px;
   padding: 6px 19px 6px 19px;
-}
-
-.descript3 {
-  color: white;
-  background: $primary-blue;
-  font-size: $redirect;
-  position: relative;
-  right: 5px;
-  padding: $redir-padding;
 }

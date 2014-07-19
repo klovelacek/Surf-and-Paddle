@@ -1,13 +1,18 @@
 aside {
-@include span-columns(4);
-text-align: center;
+@include span-columns(3);
+margin-top: 60px;
+}
+
+.dolphinLock {
+  text-align: center;
 }
 
 #dolphin {
   border-radius: 50%;
   width: 80px;
-  margin-top: 60px;
+  margin: 0px auto 0px auto;
   text-align: center;
+  overflow: hidden;
 }
 
 .annieType {
@@ -32,12 +37,33 @@ text-align: center;
 }
 
 .seaside img  {
-  width: 75%;
+  width: 100%;
   margin-top: 40px;
 }
 
-.addLink {
+.adLink {
+  overflow: hidden;
+  padding-left: 146px;
+  margin-top: 5px;
+}
+
+.adlink a {
+  font-size: $redirect;
+  color: #888;
+  text-decoration: underline;
+}
+
+.sideSection h3 {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-family: 'Oswald';
+  font-size: 20px;
+  color: $primary-blue;
+  text-transform: uppercase;
+}
+
+.sideSection p {
   color: $secondary-blue;
-  font-size: 12px;
-  margin-left: 30px;
+  margin-top: 8px;
 }

@@ -85,40 +85,48 @@ blockquote {
 
 // Page Redirect Bottom of Main article
 
-.colophon ul li {
+.redirectIcon {
   list-style-type: none;
   display: inline;
-  text-decoration: none;
-  height: 50px;
+  height: 30px;
+  float: left;
+
+  i {
+    color: white;
+    background: #666;
+    font-size: 15px;
+    text-align: center;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+
+    &:hover {
+      background: #061529;
+    }
+  }
 }
 
-.colophon ul li i {
-  color: white;
-  background: black;
-  font-size: 13px;
-  padding: 6px 7px 6px 7px;
+
+.readCom, .readLater {
+  margin-right: 15px;
 }
 
-.colophon ul {
-  padding-left: 0;
-}
-
-.descript1 .descript3 {
+.readCom, .postThis, .readLater {
+  height: 30px;
+  width: 120px;
   color: white;
   background: $secondary-blue;
   font-size: $redirect;
   padding: $redir-padding;
   position: relative;
-  right: 5px;
+  float: left;
+
+  &:hover {
+    background: $dark-blue
+  }
 }
 
-.descript2 {
-  color: white;
-  background: $secondary-blue;
-  font-size: $redirect;
-  position: relative;
-  padding: 6px 19px 6px 19px;
-}
+
 
 .clear {
   clear: both;

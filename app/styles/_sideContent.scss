@@ -40,15 +40,16 @@ margin-top: 60px;
   overflow: hidden;
   margin-top: 40px;
   background: $blue-overlay;
-  small {
-    font-size: 13px;
-  }
 }
 
 .adLink {
   padding-left: 54%;
   margin-top: 5px;
-  font-color: #999;
+}
+
+.adlink a {
+  font-size: 12px;
+  color: #999;
 }
 
 .sideSection h3 {

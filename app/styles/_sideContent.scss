@@ -9,7 +9,7 @@ margin-top: 60px;
 
 #dolphin {
   border-radius: 50%;
-  width: 80px;
+  width: 72px;
   margin: 0px auto 0px auto;
   text-align: center;
   overflow: hidden;
@@ -21,15 +21,14 @@ margin-top: 60px;
   text-transform: uppercase;
   color: $primary-blue;
   text-align: center;
-  font-size: 19px;
+  font-size: 15px;
   margin: 11px 0px 6px 0px;
 }
 
 .socialLinks a {
   font-family: 'Muli' 200;
   text-transform: capitalize;
-  letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 13px;
   color: $secondary-blue;
   display: inline;
   list-style-type: none;
@@ -40,25 +39,23 @@ margin-top: 60px;
   width: 100%;
   overflow: hidden;
   margin-top: 40px;
+  background: $blue-overlay;
+  small {
+    font-size: 13px;
+  }
 }
 
 .adLink {
-  overflow: hidden;
-  padding-left: 59%;
+  padding-left: 54%;
   margin-top: 5px;
-}
-
-.adlink a {
-  font-size: small;
-  color: #888;
-  text-decoration: underline;
+  font-color: #999;
 }
 
 .sideSection h3 {
   margin-top: 60px;
   margin-bottom: 0px;
   font-family: 'Oswald';
-  font-size: 20px;
+  font-size: 18px;
   color: $primary-blue;
   text-transform: uppercase;
 }

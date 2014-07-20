@@ -2,11 +2,9 @@
 
 .mainWrapper {
   max-width: 960px;
-  margin: 12% auto 0px auto;
-  @include outer-container;
+  margin: 170px auto 0px auto;
   overflow: hidden;
 }
-
 
 // Main Article Headline
 
@@ -19,7 +17,7 @@ h2 {
   font-size: $h2-headline;
   font-family: 'Oswald';
   color: black;
-  line-height: 67px;
+  line-height: 60px;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -75,13 +73,13 @@ img {
 //Pull Quote here
 
 blockquote {
-  font-size: 1.9em;
+  font-size: 1.35em;
   font-family: 'Muli';
   line-height: 35px;
   text-transform: uppercase;
   color: $primary-blue;
   border-left: solid 5px $secondary-blue;
-  padding-left: 30px;
+  padding-left: 22px;
   margin-left: 0;
 }
 
@@ -147,7 +145,7 @@ blockquote {
 
 .popPost1, .popPost2, .popPost3, .popPost4 {
   @include pop-post-bg;
-  }
+}
 
 .popPost1 {
   background: $blue-overlay, url(/images/popPost1.jpg);
@@ -173,28 +171,46 @@ blockquote {
   clear: right;
 }
 
+// Footer Section Starts here
+
 footer {
-  display: flex;
   width: 100%;
   height: 100px;
   background-color: #12396B;
-  float: left;
   overflow: hidden;
+  float: left;
 }
 
-.flex-container {
+.signoff {
   max-width: 960px;
-  height: 50px;
-  margin: auto;
-  
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+
   img {
-    width: 8%;
-    align-items: flex-start center;
-    margin-right: 10px;
+    margin-right: 13px;
+    margin-top: 30px;
+    float: left;
   }
 }
 
 small {
   color: #999;
-  align-items: flex-start center;
+  padding-bottom: 30px;
+  margin-top: 45px;
+  float: left;
 }
+
+.signoff ul{
+    margin-top: 45px;
+    font-size: 13px;
+    float: right;
+}
+
+.signoff
+  li {
+      display: inline;
+      text-decoration: none;
+      list-style-type: none;
+      color: #999;
+  }

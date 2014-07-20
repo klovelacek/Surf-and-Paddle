@@ -4,15 +4,18 @@ header {
     overflow: hidden;
   }
 
+//Wraps the Main header and contains the Masthead image
+
 .wrapper {
-  background: url(/images/big-ocean-wave-wallpaper.jpg);
+  background: url(/images/oceanSunset.jpg);
   background-size: cover;
-  background-position-y: 90%;
+  background-position-y: 55%;
   background-position-x: 70%;
   width: 100%;
   height: 490px;
 }
 
+// Site nav in top right of Main header
 
 .mainNav {
   @include outer-container;
@@ -25,6 +28,8 @@ header {
   font-size: 18px;
   font-family: 'Oswald';
 }
+
+// Link to Blog section or external link to ?
 
 .blogNav {
   top: 5px;
@@ -55,6 +60,8 @@ a {
   }
 }
 
+// Hero text lock up
+
 .hero {
   @include outer-container;
   max-width: 960px;
@@ -72,7 +79,7 @@ a {
   }
   .sub {
     font-size: $h5-headline;
-    color: black;
+    color: white;
     font-weight: 400;
     margin-top: 0px;
   }

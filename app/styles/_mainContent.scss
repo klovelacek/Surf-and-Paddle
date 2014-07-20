@@ -1,19 +1,24 @@
+// Wraps all content beneath the Mai heater
+
 .mainWrapper {
-  width: 85%;
-  margin: 16% auto 30px auto;
+  max-width: 960px;
+  margin: 12% auto 0px auto;
   @include outer-container;
+  overflow: hidden;
 }
+
+
+// Main Article Headline
 
 article {
   @include span-columns(7);
   margin-right: 8%;
 }
-// Big Article Headline
+
 h2 {
   font-size: $h2-headline;
   font-family: 'Oswald';
   color: black;
-  font-weight: 300;
   line-height: 67px;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -30,7 +35,9 @@ p {
     color: orange;
   }
 }
+
 // Article Author cutline and article date
+
 .cutLine {
   list-style-type: none;
   display: inline;
@@ -63,6 +70,7 @@ img {
 .inLine {
   color: $primary-blue;
 }
+
 
 //Pull Quote here
 
@@ -112,4 +120,81 @@ blockquote {
   font-size: $redirect;
   position: relative;
   padding: 6px 19px 6px 19px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+// Popular Post Section
+
+.postHeader {
+  width: 100%;
+  float: left;
+  margin-top: 1.25em;
+}
+
+.postHeader
+  h1 {
+  font-family: 'Oswald';
+  font-size: $h2-headline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .7em;
+}
+
+.popPost1, .popPost2, .popPost3, .popPost4 {
+  @include pop-post-bg;
+  }
+
+.popPost1 {
+  background: $blue-overlay, url(/images/popPost1.jpg);
+  background-position-y: 53%;
+}
+
+.popPost2 {
+  background: $blue-overlay, url(/images/popPost2.jpg);
+  background-position-y: 3%;
+  background-position-x: 70%;
+}
+
+.popPost3 {
+  background: $blue-overlay, url(/images/popPost3.jpg);
+  background-position-y: 12%;
+  background-position-x: 70%;
+}
+
+.popPost4 {
+  background: $blue-overlay, url(/images/popPost4.jpg);
+  background-position-y: 12%;
+  background-position-x: 30%;
+  clear: right;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #12396B;
+  float: left;
+  overflow: hidden;
+}
+
+.flex-container {
+  max-width: 960px;
+  height: 50px;
+  margin: auto;
+  
+  img {
+    width: 8%;
+    align-items: flex-start center;
+    margin-right: 10px;
+  }
+}
+
+small {
+  color: #999;
+  align-items: flex-start center;
 }

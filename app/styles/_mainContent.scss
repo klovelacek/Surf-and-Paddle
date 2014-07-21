@@ -236,8 +236,13 @@ small {
 
 .signoff
   li {
-      display: inline;
-      text-decoration: none;
-      list-style-type: none;
-      color: #999;
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+    color: #999;
+    padding-right: 6px;
+
+    &:hover {
+      color: white;
+    }
   }

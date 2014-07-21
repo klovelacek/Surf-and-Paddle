@@ -29,6 +29,7 @@ p {
 
 .inlineAnchor {
   color: $primary-blue;
+
     &:hover {
     color: orange;
   }
@@ -37,10 +38,11 @@ p {
 // Article Author cutline and article date
 
 .cutLine {
-  list-style-type: none;
-  display: inline;
+  display: flex;
+  align-items: center;
   margin-top: 15px;
   font-size: 13px;
+
   img {
     width: 43px;
     border-radius: 50%;
@@ -63,12 +65,8 @@ img {
 
 #date {
   color: $secondary-blue;
+  margin-left: 5px;
 }
-
-.inLine {
-  color: $primary-blue;
-}
-
 
 //Pull Quote here
 
@@ -126,8 +124,6 @@ blockquote {
   }
 }
 
-
-
 .clear {
   clear: both;
 }
@@ -158,18 +154,35 @@ blockquote {
 .popPost1 {
   background: $blue-overlay, url(/images/popPost1.jpg);
   background-position-y: 53%;
+
+  &:hover {
+    background: $blue-overlay-focus, url(/images/popPost1.jpg);
+    background-position-y: 53%;
+  }
 }
 
 .popPost2 {
   background: $blue-overlay, url(/images/popPost2.jpg);
   background-position-y: 3%;
   background-position-x: 70%;
+
+  &:hover {
+    background: $blue-overlay-focus, url(/images/popPost2.jpg);
+    background-position-y: 3%;
+    background-position-x: 70%;
+  }
 }
 
 .popPost3 {
   background: $blue-overlay, url(/images/popPost3.jpg);
   background-position-y: 12%;
   background-position-x: 70%;
+
+  &:hover {
+    background: $blue-overlay-focus, url(/images/popPost3.jpg);
+    background-position-y: 12%;
+    background-position-x: 70%;
+  }
 }
 
 .popPost4 {
@@ -177,6 +190,12 @@ blockquote {
   background-position-y: 12%;
   background-position-x: 30%;
   clear: right;
+
+  &:hover {
+    background: $blue-overlay-focus, url(/images/popPost4.jpg);
+    background-position-y: 12%;
+    background-position-x: 30%;
+  }
 }
 
 // Footer Section Starts here
